@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Superheroes</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro:ital@1&display=swap');
+		body {
+			background-image: linear-gradient(blue,black);
+			background-size : cover;
+		}
+		.container {
+			background-image: linear-gradient(blue,grey);
+			display: grid;
+			grid-template-areas: 200px auto 100px;
+		}
+		.gallery {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		.gallery-item{
+			width: 250px;
+			height: 250px;
+			transition: background-color 2s ease 0.5s;
+			padding: 50px;
+			display: flex;
+			justify-content: center;
+		}
+		.gallery-item img{
+			padding: 2px;
+			width: 90%;
+			height: 90%;
+
+		}
+		.gallery-item:hover{
+			background-color: green;
+		}
+		.header h1{
+			font-family: 'Source Code Pro', monospace;
+			font-size: 4rem;
+			text-transform: uppercase;
+		}
+		.footer h4{
+			font-family: 'Montserrat', sans-serif;
+			color: white;
+			text-shadow: 2px 2px black;
+		}
+		@media only screen and (max-width: 600px){
+			.gallery-item {
+				width: 125px !important;
+				margin: 10px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+		<h1>Favourite Superheroes</h1>
+	</div>
+	<div class="gallery">
+		<div class="gallery-item">
+			<!-- <img src="https://i.cdn.newsbytesapp.com/images/l176_11011553006253.jpg"> -->
+			<iframe  src="https://www.youtube.com/embed/NoWQxNxroo4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="gallery-item">
+			<img src="https://i.ytimg.com/vi/BNcxTNrtRdk/maxresdefault.jpg">
+		</div>
+		<div class="gallery-item">
+			<img src="https://cdn.vox-cdn.com/thumbor/2hcZHf3IO6IRSi9iyqctVhmBT8g=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19736955/GettyImages_1202254631.jpg">
+		</div>
+		<div class="gallery-item">
+			<img src="https://cdn.mos.cms.futurecdn.net/ytDTW3FMV5SswTnR5aYDgP.jpg">
+		</div>
+	</div>
+	<div class="footer">
+		<h4>Designed by Student</h4>
+	</div>
+
+	</div>
+
+</body>
+</html>
